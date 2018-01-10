@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MapComponent,IterablePipe } from './map/map.component';
 import { SetComponent } from './set/set.component';
+import { DateformatComponent } from './dateformat/dateformat.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { SetComponent } from './set/set.component';
     AppComponent,
     MapComponent,
     SetComponent,
-    IterablePipe
+    IterablePipe,
+    DateformatComponent
   ],
   imports: [
     BrowserModule

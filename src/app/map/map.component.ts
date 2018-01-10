@@ -6,24 +6,32 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  map = new Map<String, String>();
+  map = new Map<String, Map<String,String>>();
+  map1 = new Map<String, String>();
+  mapkeys;
+
   constructor() { 
 
     
   }
 
   ngOnInit() {
-    this.map.set("sss","sss");
-    this.map.set("aaa","sss");
-    this.map.set("sass","sss");
-    this.map.set("xxx","sss");
-    this.map.set("ss","sss");
-    this.map.forEach((value: string, key: string) => {
+    this.map1.set("sss","sss");
+    this.map1.set("aaa","sss");
+    this.map1.set("sass","sss");
+    this.map1.set("xxx","sss");
+    this.map1.set("ss","sss");
+
+
+    this.map1.forEach((value: string, key: string) => {
       console.log(key, value);
   
     });
 
-    
+
+    this.map.set("yoyoy",this.map1);
+    this.mapkeys = Array.from(this.map.keys());
+
   }
 
  
