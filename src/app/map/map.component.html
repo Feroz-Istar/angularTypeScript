@@ -1,6 +1,14 @@
 <ul>
-  <li *ngFor="let recipient of map | iterable">
-    {{recipient.value}}
+  <li *ngFor="let recipient of getKeys(map)">
+
+    <div>{{recipient}} ---- {{map.get(recipient).size}}</div>
+    <div *ngFor="let aa of getKeys(map.get(recipient))">
+
+      <div class="true clsss">{{aa}} --- {{map.get(recipient).get(aa)}}</div>
+
+    </div>
+
+
    </li>
 </ul>
 
@@ -12,8 +20,3 @@
 
 
 <div>{{map.size}}</div>
-<ul>
-  <li *ngFor="let ddd of mapkeys">
-    {{dd}}
-   </li>
-</ul>

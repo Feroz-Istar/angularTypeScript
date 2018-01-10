@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { MapComponent,IterablePipe } from './map/map.component';
+import { MapComponent } from './map/map.component';
 import { SetComponent } from './set/set.component';
 import { DateformatComponent } from './dateformat/dateformat.component';
 
@@ -13,7 +13,6 @@ import { DateformatComponent } from './dateformat/dateformat.component';
     AppComponent,
     MapComponent,
     SetComponent,
-    IterablePipe,
     DateformatComponent
   ],
   imports: [

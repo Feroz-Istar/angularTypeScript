@@ -16,11 +16,11 @@ export class MapComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.map1.set("sss","sss");
-    this.map1.set("aaa","sss");
-    this.map1.set("sass","sss");
-    this.map1.set("xxx","sss");
-    this.map1.set("ss","sss");
+    this.map1.set("sss","aa");
+    this.map1.set("aaa","aass");
+    this.map1.set("sass","SZZZZ");
+    this.map1.set("xxx","ssawqqqs");
+    this.map1.set("ss","sdfxcxss");
 
 
     this.map1.forEach((value: string, key: string) => {
@@ -30,37 +30,12 @@ export class MapComponent implements OnInit {
 
 
     this.map.set("yoyoy",this.map1);
-    this.mapkeys = Array.from(this.map.keys());
 
   }
-
+  getKeys(map){
+    return Array.from(map.keys());
+  }
  
 
 }
 
-
-import { Pipe, PipeTransform } from '@angular/core';
-
-
-@Pipe({
-  name: 'iterable'
-})
-export class IterablePipe implements PipeTransform {
-  transform(iterable: any, args: any[]): any {
-    let result = [];
-
-    if (iterable.entries) {
-      iterable.forEach((key, value) => {
-        result.push({ key, value });
-      });
-    } else {
-      for (let key in iterable) {
-        if (iterable.hasOwnProperty(key)) {
-          result.push({ key, value: iterable[key] });
-        }
-      }
-    }
-
-    return result;
-  }
-}
