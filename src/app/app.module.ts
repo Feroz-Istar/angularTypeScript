@@ -3,11 +3,16 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { MapComponent,IterablePipe } from './map/map.component';
+import { SetComponent } from './set/set.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapComponent,
+    SetComponent,
+    IterablePipe
   ],
   imports: [
     BrowserModule
