@@ -1,3 +1,4 @@
+import { Logger } from './../masterutil/logger';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,6 +12,7 @@ export class SetComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    Logger.log('yahoo mail .cpom ')
     this.set.add('yahooo ');
     this.set.add('sd dljd skd  ');
     this.set.add('asassasaasa ');

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { SetComponent } from './set/set.component';
 import { DateformatComponent } from './dateformat/dateformat.component';
+import { ModaltestComponent } from './modaltest/modaltest.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -13,10 +15,12 @@ import { DateformatComponent } from './dateformat/dateformat.component';
     AppComponent,
     MapComponent,
     SetComponent,
-    DateformatComponent
+    DateformatComponent,
+    ModaltestComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
